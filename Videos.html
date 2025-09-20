@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZORO ISS LIVE - BGMI & PUBG Updates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+        
+        .font-gaming { font-family: 'Orbitron', monospace; }
+        .font-body { font-family: 'Rajdhani', sans-serif; }
+        
+        .gaming-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .bgmi-gradient {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+        }
+        
+        .pubg-gradient {
+            background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(106, 234, 102, 0.5);
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        
+        .animated-bg {
+            background: linear-gradient(-45deg, #75ea66, #764ba2, #f093fb, #f5576c);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .slide-in {
+            animation: slideIn 0.6s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>   
+</head>
+<!-- Videos.html -->
+<body class="bg-gray-900 text-white font-body">
+    
+    <!-- Header -->
+    <header class="animated-bg py-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+                        <span class="text-2xl">🎮</span>
+                    </div>
+                    <h1 class="font-gaming text-3xl font-bold text-glow">GameZone ZORO ISS LIVE </h1>
+                </div>
+                <nav class="hidden md:flex space-x-8"></nav>
+                   <a href="tutorials.html" class="hover:text-yellow-400 transition-colors font-medium">tutorials videos</a>
+                   <a href="gameplay.html" class="hover:text-yellow-400 transition-colors font-medium">gameplay videos</a>               
