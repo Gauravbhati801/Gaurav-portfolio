@@ -70,6 +70,35 @@
             to { transform: translateX(0); opacity: 1; }
         }
     </style>
+	<style>
+        .search-bar{
+            display: flex;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .search-bar input{
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+        .search-bar button{
+            background: #eee;
+            padding: 8px 16x;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .search-bar button:hover{
+            background-color: #45a049;
+        }
+        input[type="text"]{
+            color: black;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-white font-body">
     <!-- Header -->
@@ -354,3 +383,4 @@
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'972fb485562747ef',t:'MTc1NTgzNzc2My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
