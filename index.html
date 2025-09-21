@@ -69,8 +69,8 @@
             from { transform: translateX(-100px); opacity: 0; }
             to { transform: translateX(0); opacity: 1; }
         }
-    </style>
-	<style>
+        </style>
+        <style>
         .search-bar{
             display: flex;
             max-width: 400px;
@@ -98,10 +98,45 @@
         input[type="text"]{
             color: black;
         }
+        /* --- Media Query for Mobile Devices --- */
+/* Jab screen ki width 768 pixels ya usse kam ho */
+@media (max-width: 768px) {
+    
+    /* Body aur font size ko adjust karein */
+    body {
+        font-size: 16px;
+    }
+    
+    /* Container ki padding kam karein */
+    .container {
+        padding: 10px;
+    }
+    
+    /* Heading ka font size chota karein */
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    /* Post ke andar padding kam karein */
+    .post {
+        padding: 15px;
+    }
+    
+    /* Images aur videos ko mobile friendly banayein */
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Agar koi element flex row mein hai, to use column mein badal dein */
+    .flex-row-class {
+        flex-direction: column;
+    }
+    }
     </style>
 </head>
 <body class="bg-gray-900 text-white font-body">
-	 <form class="search bar">
+    <form class="search bar">
         <input type="text" placeholder="search" name="search">
         <button type="submit">search</button>
     </form>
@@ -134,18 +169,19 @@
 
     <!-- Hero Section -->
     <section id="home" class="py-20 px-6">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="font-gaming text-5xl md:text-7xl font-bold mb-6 text-glow slide-in">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-gaming text-1xl md:text-1xl font-bold mb-6 text-glow slide-in">
                 Latest Gaming Updates Gaurav studio mein apka swagat hai
             </h2>
-            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p class="text-xl md:text-0.1xl text-gray-300 mb-8 max-w-3xl mx-auto">
                 BGMI और PUBG की सबसे latest updates, tips, tricks और news यहाँ पाएं
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-lg font-bold text-lg transition-all glow-effect">
-                    🔥 Latest Updates
+                <a href="latest-updates.html" class="📱 border-2 border-red-600 hover:bg-red-700 px-4 py-4 rounded-lg font-bold text-lg transition-all">Latest Updates</a>
+            
+                    
                 </button>
-                <button class="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-8 py-4 rounded-lg font-bold text-lg transition-all">
+                <button class="border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-4 py-4 rounded-lg font-bold text-lg transition-all">
                     📱 Download Tips
                 </button>
             </div>
@@ -153,12 +189,12 @@
     </section>
 
     <!-- Game Cards Section -->
-    <section class="py-16 px-6">
-        <div class="max-w-7xl mx-auto">
+    <section class="py-1 px-0.005">
+        <div class="max-w-1xl mx-auto">
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- BGMI Card -->
                 <div id="bgmi" class="card-hover bgmi-gradient rounded-2xl p-8 text-center">
-                    <div class="text-6xl mb-4">🔫</div>
+                    <div class="text-1x1 mb-4">🔫</div>
                     <h3 class="font-gaming text-3xl font-bold mb-4">BGMI Updates</h3>
                     <p class="text-lg mb-6 opacity-90">
                         Battlegrounds Mobile India की latest updates, new features, और events की जानकारी
